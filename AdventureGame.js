@@ -30,7 +30,7 @@ const rl = readline.createInterface({
   });
   rl.question('Who is so brave to go on this adventure? ', (playerName) => {
     console.log(`Hello, ${playerName}!`);
+    console.log("player has " + playerGold + " gold!")
     rl.close(); // Close the interface when you're done
   }); 
   
-console.log("player has " + playerGold + " gold!")
