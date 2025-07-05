@@ -23,14 +23,14 @@ console.log("Welcome to the Adventure Game");
 // Add a welcome message
 console.log("Prepare yourself for an epic journey!");
 
-//playerName = readline.question("Who is so brave to go on this adventure?")
 const rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
   });
+  //Get player's name
   rl.question('Who is so brave to go on this adventure? ', (playerName) => {
     console.log(`Hello, ${playerName}!`);
-    console.log("You have " + playerGold + " gold!")
+    console.log("You start with " + playerGold + " gold!")
     rl.close(); // Close the interface when you're done
   }); 
   
